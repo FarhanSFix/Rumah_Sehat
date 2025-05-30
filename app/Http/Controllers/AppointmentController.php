@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AppointmentController extends Controller
 {
-    public function index(Request $request){
+    public function index(Request $request)
+    {
         $polies = Poly::all();
         $schedules = Schedule::whereStatus(true)->get();
         $statuses = $request->statuses ? [$request->statuses] : ['checkup', 'waiting_medicine', 'done', 'canceled'];
@@ -21,12 +22,14 @@ class AppointmentController extends Controller
         return view('site.appointment', compact('polies', 'schedules', 'checkups'));
     }
 
-    public function schedules($poly_id){ //api
+    public function schedules($poly_id)
+    { //api
         $schedules = Schedule::wherePolyId($poly_id)->whereStatus(true)->get();
         return response()->json(new ScheduleCollection($schedules), 200);
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
             'complaint' => 'required|max:255',
             'schedule' => 'required|numeric',
@@ -37,32 +40,63 @@ class AppointmentController extends Controller
         return back()->with('success', 'Berhasil mendaftar poli');
     }
 
-    public function checkup(Checkup $checkup){
-        if(Auth::user()->role == 'patient' && $checkup->user_id != Auth::user()->id) return abort(403);
-        if(Auth::user()->role == 'doctor' && $checkup->schedule->user->id != Auth::user()->id) return abort(403);
+    public function checkup(Checkup $checkup)
+    {
+        if (Auth::user()->role == 'patient' && $checkup->user_id != Auth::user()->id)
+            return abort(403);
+        if (Auth::user()->role == 'doctor' && $checkup->schedule->user->id != Auth::user()->id)
+            return abort(403);
         $medicines = Medicine::all();
         return view('site.checkup', compact('checkup', 'medicines'));
     }
 
-    public function update(Request $request, Checkup $checkup){
+    public function update(Request $request, Checkup $checkup)
+    {
         $checkup_price = 150000;
         $total_price = $checkup_price;
         foreach ($request->medicine_id as $key => $medicine_id) {
             $medicine = Medicine::find($medicine_id);
             Detail::create([
-                'checkup_id' => $checkup->id, 'medicine_id' => $medicine_id, 'application' => $request->application[$key],
-                'qty' => $request->qty[$key], 'price' => $medicine->price
+                'checkup_id' => $checkup->id,
+                'medicine_id' => $medicine_id,
+                'application' => $request->application[$key],
+                'qty' => $request->qty[$key],
+                'price' => $medicine->price
             ]);
             $total_price += ($medicine->price * $request->qty[$key]);
         }
         $checkup->update([
-            'note' => $request->note, 'checkup_price' => $checkup_price, 'total_price' => $total_price, 'status' => 'waiting_medicine'
+            'note' => $request->note,
+            'checkup_price' => $checkup_price,
+            'total_price' => $total_price,
+            'status' => 'waiting_medicine'
         ]);
         return redirect('/workspace')->with('success', 'Data Recorded.');
     }
 
-    public function update_status(Request $request, Checkup $checkup){
+    public function update_status(Request $request, Checkup $checkup)
+    {
         $checkup->update($request->only('status'));
         return back();
     }
+
+    public function apiStore(Request $request)
+    {
+        $request->validate([
+            'complaint' => 'required|max:255',
+            'schedule' => 'required|numeric',
+        ]);
+
+        $checkup = \App\Models\Checkup::create([
+            'user_id' => $request->user()->id,
+            'schedule_id' => $request->schedule,
+            'complaint' => $request->complaint,
+        ]);
+
+        return response()->json([
+            'message' => 'Appointment created successfully',
+            'data' => $checkup
+        ], 201);
+    }
+
 }

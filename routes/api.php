@@ -9,3 +9,5 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 Route::get('/schedules/{poly_id}', [AppointmentController::class, 'schedules']);
+Route::middleware('auth:sanctum')->post('/appointments', [AppointmentController::class, 'apiStore']);
+

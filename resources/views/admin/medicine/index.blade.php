@@ -75,7 +75,7 @@
                                                 <td>{{ $medicine->unit }}</td>
                                                 <td>{{ rupiah($medicine->price) }}</td>
                                                 <td>{{ tglwaktu($medicine->created_at) }}</td>
-                                                <td>
+                                                <td >
                                                     <a class="btn btn-sm btn-warning mb-2" data-toggle="modal" data-target="#editModal{{$medicine->id}}"><i class="fa fa-pen"></i></a>
                                                     <a class="btn btn-sm btn-danger mb-2" data-toggle="modal" data-target="#deleteModal{{$medicine->id}}"><i class="fa fa-trash"></i></a>
                                                 </td>

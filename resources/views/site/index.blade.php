@@ -6,19 +6,19 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background">
 
-            <img src="{{ asset('medilab/img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
+            <img src="{{ asset('medcheck/img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
 
             <div class="container position-relative">
 
                 <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                    <h2>WELCOME TO SIREMED</h2>
-                    <p>Sistem Informasi Rekam Medis</p>
+                    <h2>WELCOME TO MEDCHECK</h2>
+                    <p>Sistem Informasi Medical checkup</p>
                 </div><!-- End Welcome -->
 
                 <div class="content row gy-4">
                     <div class="col-lg-4 d-flex align-items-stretch">
                         <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                            <h3>Why Choose Siremed?</h3>
+                            <h3>Why Choose SIMEDCHECK?</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
@@ -80,7 +80,7 @@
                 <div class="row gy-4 gx-5">
 
                     <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-                        <img src="{{ asset('medilab/img/about.jpg') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('medcheck/img/about.jpg') }}" class="img-fluid" alt="">
                         <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
                     </div>
 
@@ -134,7 +134,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fa-solid fa-user-doctor"></i>
                         <div class="stats-item">
-                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1"
                                 class="purecounter"></span>
                             <p>Doctors</p>
                         </div>
@@ -143,7 +143,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fa-regular fa-hospital"></i>
                         <div class="stats-item">
-                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                                 class="purecounter"></span>
                             <p>Departments</p>
                         </div>
@@ -152,7 +152,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fas fa-flask"></i>
                         <div class="stats-item">
-                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
                                 class="purecounter"></span>
                             <p>Research Labs</p>
                         </div>
@@ -161,7 +161,7 @@
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
                         <i class="fas fa-award"></i>
                         <div class="stats-item">
-                            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
                                 class="purecounter"></span>
                             <p>Awards</p>
                         </div>
@@ -383,7 +383,7 @@
                                             similique accusamus nostrum rem vero</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('medilab/img/departments-1.jpg') }}" alt=""
+                                        <img src="{{ asset('medcheck/img/departments-1.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -400,7 +400,7 @@
                                             desera vafle de nideran pal</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('medilab/img/departments-2.jpg') }}" alt=""
+                                        <img src="{{ asset('medcheck/img/departments-2.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -418,7 +418,7 @@
                                             harum voluptatem optio quae</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('medilab/img/departments-3.jpg') }}" alt=""
+                                        <img src="{{ asset('medcheck/img/departments-3.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -435,7 +435,7 @@
                                             laborum inventore</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('medilab/img/departments-4.jpg') }}" alt=""
+                                        <img src="{{ asset('medcheck/img/departments-4.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -451,7 +451,7 @@
                                             Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('medilab/img/departments-5.jpg') }}" alt=""
+                                        <img src="{{ asset('medcheck/img/departments-5.jpg') }}" alt=""
                                             class="img-fluid">
                                     </div>
                                 </div>
@@ -479,7 +479,7 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('medilab/img/doctors/doctors-1.jpg') }}"
+                            <div class="pic"><img src="{{ asset('medcheck/img/doctors/doctors-1.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Walter White</h4>
@@ -497,7 +497,7 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('medilab/img/doctors/doctors-2.jpg') }}"
+                            <div class="pic"><img src="{{ asset('medcheck/img/doctors/doctors-2.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Sarah Jhonson</h4>
@@ -515,7 +515,7 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('medilab/img/doctors/doctors-3.jpg') }}"
+                            <div class="pic"><img src="{{ asset('medcheck/img/doctors/doctors-3.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>William Anderson</h4>
@@ -533,7 +533,7 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('medilab/img/doctors/doctors-4.jpg') }}"
+                            <div class="pic"><img src="{{ asset('medcheck/img/doctors/doctors-4.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Amanda Jepson</h4>
@@ -684,7 +684,7 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="d-flex">
-                                            <img src="{{ asset('medilab/img/testimonials/testimonials-1.jpg') }}"
+                                            <img src="{{ asset('medcheck/img/testimonials/testimonials-1.jpg') }}"
                                                 class="testimonial-img flex-shrink-0" alt="">
                                             <div>
                                                 <h3>Saul Goodman</h3>
@@ -709,7 +709,7 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="d-flex">
-                                            <img src="{{ asset('medilab/img/testimonials/testimonials-2.jpg') }}"
+                                            <img src="{{ asset('medcheck/img/testimonials/testimonials-2.jpg') }}"
                                                 class="testimonial-img flex-shrink-0" alt="">
                                             <div>
                                                 <h3>Sara Wilsson</h3>
@@ -734,7 +734,7 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="d-flex">
-                                            <img src="{{ asset('medilab/img/testimonials/testimonials-3.jpg') }}"
+                                            <img src="{{ asset('medcheck/img/testimonials/testimonials-3.jpg') }}"
                                                 class="testimonial-img flex-shrink-0" alt="">
                                             <div>
                                                 <h3>Jena Karlis</h3>
@@ -759,7 +759,7 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="d-flex">
-                                            <img src="{{ asset('medilab/img/testimonials/testimonials-4.jpg') }}"
+                                            <img src="{{ asset('medcheck/img/testimonials/testimonials-4.jpg') }}"
                                                 class="testimonial-img flex-shrink-0" alt="">
                                             <div>
                                                 <h3>Matt Brandon</h3>
@@ -784,7 +784,7 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-item">
                                         <div class="d-flex">
-                                            <img src="{{ asset('medilab/img/testimonials/testimonials-5.jpg') }}"
+                                            <img src="{{ asset('medcheck/img/testimonials/testimonials-5.jpg') }}"
                                                 class="testimonial-img flex-shrink-0" alt="">
                                             <div>
                                                 <h3>John Larson</h3>
@@ -833,9 +833,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-1.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-1.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-1.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-1.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -843,9 +843,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-2.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-2.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-2.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-2.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -853,9 +853,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-3.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-3.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-3.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-3.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -863,9 +863,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-4.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-4.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-4.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-4.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -873,9 +873,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-5.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-5.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-5.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-5.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -883,9 +883,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-6.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-6.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-6.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-6.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -893,9 +893,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-7.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-7.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-7.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-7.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -903,9 +903,9 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('medilab/img/gallery/gallery-8.jpg') }}" class="glightbox"
+                            <a href="{{ asset('medcheck/img/gallery/gallery-8.jpg') }}" class="glightbox"
                                 data-gallery="images-gallery">
-                                <img src="{{ asset('medilab/img/gallery/gallery-8.jpg') }}" alt=""
+                                <img src="{{ asset('medcheck/img/gallery/gallery-8.jpg') }}" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -928,7 +928,7 @@
 
             <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
                 <iframe style="border:0; width: 100%; height: 270px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.2256286884576!2d110.40906059999999!3d-6.9826794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e0!3m2!1sid!2sid!4v1734051953961!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5811281980164!2d109.22884757318747!3d-7.400740672866797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ef25207e1e1%3A0xcedb82ef04ed7e7c!2sUniversitas%20Amikom%20Purwokerto!5e0!3m2!1sid!2sid!4v1748519373095!5m2!1sid!2sid"
                     frameborder="0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div><!-- End Google Maps -->
@@ -942,7 +942,7 @@
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
                                 <h3>Location</h3>
-                                <p>Semarang, Semarang Tengah, Kauman</p>
+                                <p>Purwokerto, Jawa Tengah, Indonesia</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -950,7 +950,7 @@
                             <i class="bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Call Us</h3>
-                                <p>+62 821 5886 3345</p>
+                                <p>+62 812 2548 2369</p>
                             </div>
                         </div><!-- End Info Item -->
 
@@ -958,7 +958,7 @@
                             <i class="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p>gumilangcode@gmail.com</p>
+                                <p>simedcheck@gmail.com</p>
                             </div>
                         </div><!-- End Info Item -->
 
